@@ -3,6 +3,7 @@ const mdjs = require("@moox/markdown-to-json");
 
 const exclude = [
     '.git',
+    '.github',
     '.vscode',
     'README.md',
     'TOC.js',
