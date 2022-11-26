@@ -8,8 +8,8 @@ jobs:
     name: Generate TOC and check if we need to create a PR
     runs-on: ubuntu-latest
     env:
-      CI_COMMIT_MESSAGE: Continuous Integration Build Artifacts
-      CI_COMMIT_AUTHOR: Continuous Integration
+      CI_COMMIT_MESSAGE: Update TOC
+      CI_COMMIT_AUTHOR: TOC generator
     timeout-minutes: 5
     steps:
       - name: Setup Node.js
