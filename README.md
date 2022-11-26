@@ -22,7 +22,7 @@
 - [2022-08-09](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-08-09.md): Topic: Adjusting and extending 'default' tests
 - [2022-08-16](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-08-16.md): Topic: Drupal 8 / 9 / 10
 - [2022-08-23](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-08-23.md): Topic: Documentation
-- [2022-08-30](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-08-30.md): Topic: Documentation
+- [2022-08-30](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-08-30.md): Topic: Building and installing sites
 - [2022-10-04](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-10-04.md): Topic: Merging pull requests
 - [2022-10-11](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-10-11.md): Topic: Automatic deployments
 - [2022-10-25](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-10-25.md): Topic: Short meeting, short messages
