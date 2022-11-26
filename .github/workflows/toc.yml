@@ -27,7 +27,7 @@ jobs:
         run: node TOC.js > README.md
 
       - name: Check git diff
-        run: git diff README.md --exit-code
+        run: git diff --exit-code README.md
         id: git-diff
         continue-on-error: true
 
