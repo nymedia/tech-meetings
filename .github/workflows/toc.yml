@@ -1,0 +1,27 @@
+name: Generate TOC
+on:
+  - push
+  - pull_request
+
+jobs:
+  test:
+    name: Generate TOC and check if we need to create a PR
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build commands
+        run: node TOC.js > README.md
+
+      - name: Run test command
+        run: git diff
