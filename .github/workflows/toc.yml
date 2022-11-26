@@ -1,0 +1,42 @@
+name: Generate TOC
+on:
+  - push
+  - pull_request
+
+jobs:
+  test:
+    name: Generate TOC and check if we need to create a PR
+    runs-on: ubuntu-latest
+    env:
+      CI_COMMIT_MESSAGE: Continuous Integration Build Artifacts
+      CI_COMMIT_AUTHOR: Continuous Integration
+    timeout-minutes: 5
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build commands
+        run: node TOC.js > README.md
+
+      - name: Check git diff
+        run: git diff README.md --exit-code
+        id: git-diff
+        continue-on-error: true
+
+      - name: GIT Commit Build Artifacts (coverage, dist, devdist, docs)
+        # Only run on main branch push (e.g. pull request merge).
+        if: github.event_name == 'push' && steps.git-diff.outcome == 'failure' && steps.git-diff.conclusion == 'success'
+        run: |
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "eiriksm@users.noreply.github.com"
+          git add README.md
+          git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git push
