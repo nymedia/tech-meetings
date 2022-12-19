@@ -29,3 +29,4 @@
 - [2022-11-08](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-11-08.md): Topic: Repetition from earlier meetings
 - [2022-11-15](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-11-15.md): Topic: Asking questions
 - [2022-11-22](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-11-22.md): Topic: Unit tests vs integration tests
+- [2022-12-20](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-12-20.md): Topic: Queues
