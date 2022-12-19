@@ -32,7 +32,6 @@ jobs:
         continue-on-error: true
 
       - name: GIT Commit Build Artifacts (coverage, dist, devdist, docs)
-        # Only run on main branch push (e.g. pull request merge).
         if: github.event_name == 'push' && steps.git-diff.outcome == 'failure' && steps.git-diff.conclusion == 'success'
         run: |
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
