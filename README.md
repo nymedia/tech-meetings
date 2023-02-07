@@ -31,5 +31,6 @@
 - [2022-11-22](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-11-22.md): Topic: Unit tests vs integration tests
 - [2022-12-20](https://github.com/nymedia/tech-meetings/blob/1.x/2022/2022-12-20.md): Topic: Queues
 ## 2023
+- [2023-002-07](https://github.com/nymedia/tech-meetings/blob/1.x/2023/2023-002-07.md): Topic: Caching
 - [2023-01-03](https://github.com/nymedia/tech-meetings/blob/1.x/2023/2023-01-03.md): Topic: Caching
 - [2023-01-31](https://github.com/nymedia/tech-meetings/blob/1.x/2023/2023-01-31.md): Topic: Caching
